@@ -1,0 +1,12 @@
+package com.kh.controller;
+
+import com.kh.model.service.ProductService;
+
+public class ProductController {
+	
+	public void printList() {
+		new ProductService().printList(); 
+		
+	}
+
+}

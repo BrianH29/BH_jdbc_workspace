@@ -1,0 +1,22 @@
+package com.kh.view;
+
+import java.util.Scanner;
+
+public class ProductMenu {
+	
+	private Scanner sc = new Scanner(System.in);
+	public void mainMenu() {
+		
+		System.out.println("\n=====프로덕트 관리 프로그램======");
+		System.out.println("1. 상품 조회 하기");
+		System.out.println("2. 상품 추가 하기");
+		System.out.println("3. 상품 수정 하기");
+		System.out.println("4. 상품 삭제 하기");
+		System.out.println("5. 상품 검색 하기");
+		System.out.println("0. 프로그램 종료하기");
+		System.out.print("메뉴 선택 하세요:");
+		int menu = sc.nextLine(); 
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.kh.controller;
+
+import com.kh.model.vo.Member;
+
+public class MemberController {
+
+	public void insertMember(Member m) {
+		new MemberDao().insertMember(m);
+		
+		
+	}
+	
+}

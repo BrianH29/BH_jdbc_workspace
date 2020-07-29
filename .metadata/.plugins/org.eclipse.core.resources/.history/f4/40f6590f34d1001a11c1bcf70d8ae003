@@ -1,0 +1,3 @@
+#query.properties
+printList=SELECT * FROM PRODUCT ORDER BY PRODUCT_ID ASC 
+addProduct = INSERT INTO PRODUCT VALUES(?,?,?,?,?)

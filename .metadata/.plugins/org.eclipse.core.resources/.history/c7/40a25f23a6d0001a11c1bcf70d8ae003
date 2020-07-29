@@ -1,0 +1,28 @@
+package com.kh.controller;
+
+import java.util.ArrayList;
+
+import com.kh.model.service.ProductService;
+import com.kh.model.vo.Product;
+import com.kh.view.ProductMenu;
+
+public class ProductController {
+	
+	public void printList() {
+		ArrayList<Product> list = new ProductService().printList(); 
+		
+		if(list.isEmpty()) {
+			new ProductMenu().displayNoData("조회된 결과가 없습니다.");
+		}else {
+			new ProductMenu().displayMemberList(list);
+		}
+		
+	}// e.printlist
+	
+	public void addProduct(Product p) {
+		new ProductService().addProduct(p);
+	}
+	
+	
+
+}

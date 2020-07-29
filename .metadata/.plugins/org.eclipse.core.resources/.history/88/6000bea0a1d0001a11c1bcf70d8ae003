@@ -1,0 +1,2 @@
+#query.properties
+printList=SELECT * FROM PRODUCT ORDER BY ASC; 

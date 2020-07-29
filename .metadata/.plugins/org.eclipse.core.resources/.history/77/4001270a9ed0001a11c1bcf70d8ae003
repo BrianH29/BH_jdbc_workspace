@@ -1,0 +1,28 @@
+package com.kh.model.dao;
+
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Properties;
+
+import com.kh.model.vo.Product;
+import static com.kh.common.JDBCTemplate.*;
+
+public class ProductDao {
+
+	private Properties prop = new Properties();
+	
+	public void printList() {
+		ArrayList<Product> list = new ArrayList<>();
+		
+		Statement stmt = null;
+		ResultSet rset = null; 
+		
+		String sql = prop.getProperty("printList");
+		
+		stmt = conn.createStatement();
+		
+		
+		
+	}
+}
