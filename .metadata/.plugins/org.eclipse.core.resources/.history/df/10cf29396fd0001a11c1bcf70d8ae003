@@ -1,5 +1,0 @@
-#test.properties
-Create=Insert
-Read=SELECT
-Update=UPDATE
-Delete=DELETE
